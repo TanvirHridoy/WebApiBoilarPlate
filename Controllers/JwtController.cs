@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiWithJwtAuth.Model;
@@ -25,7 +21,6 @@ namespace WebApiWithJwtAuth.Controllers
         {
             string Username = "hridoy";
             string Password = "12345678";
-
             if (ModelState.IsValid)
             {
                 if (Model.EmployeeId!=Username || Model.Password!=Password)
